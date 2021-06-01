@@ -218,23 +218,33 @@
         </gallery>
 
     
-    <div id="contacts">
-        <center><h5>Обратная связь</h5></center>
-        <form id="form_input">
-            <label for="Name">Имя<span>*</span></label><br>
-            <input type="text" placeholder="Введите имя" name="name" id="name"><br>
-            <label for="email">Ваша почта<span>*</span></label><br>
-            <input type="email" placeholder="Введите email" name="email" id="email">
-            <label for="message">Сообщение<span>*</span></label><br>
-            <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea>  
-            <button type="submit" class="btn btn-warning">Отправить</button>
-            </form>
-            <form action="/contact" method="POST">
-        @csrf
-        <div class="mb-3"...>
-        <div class="mb-3">
-        </div>
-        </form>
+        <div id="contacts">
+
+<center><h5>Обратная связь</h5></center>
+
+<form action="/contact" method="POST">
+
+@csrf
+    <label for="Name">Имя<span>*</span></label><br>
+
+    <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+
+    <label for="email">Ваша почта<span>*</span></label><br>
+
+    <input type="email" placeholder="Введите email" name="email" id="email">
+
+    <label for="message">Сообщение<span>*</span></label><br>
+
+    <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea>  
+
+    <button type="submit" class="btn btn-warning">Отправить</button>
+
+    </form>
+    </div>
+    
+
+
+
        
     
 
