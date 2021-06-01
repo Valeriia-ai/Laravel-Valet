@@ -227,9 +227,15 @@
             <input type="email" placeholder="Введите email" name="email" id="email">
             <label for="message">Сообщение<span>*</span></label><br>
             <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea>  
-            <button type="button" class="btn btn-warning">Отправить</button>
+            <button type="submit" class="btn btn-warning">Отправить</button>
+            </form>
+            <form action="/contact" method="POST">
+        @csrf
+        <div class="mb-3"...>
+        <div class="mb-3">
+        </div>
         </form>
-    </div>
+       
     
 
         <img src="https://www.koenigsegg.com/wp-content/themes/koenigsegg/gemera/assets/images/svg/Koenigsegg_footer.svg">

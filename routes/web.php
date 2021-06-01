@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome2');
+});
+
+Route::post('/contact', function () {
+    $data = request()->all();
+    dd($data);
+    return view('welcome2');
 });
