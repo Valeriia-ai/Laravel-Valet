@@ -220,8 +220,12 @@
         @csrf
         <div class="mb-3">
             <label for="Name">Имя<span>*</span></label><br>
-            <input type="text" class="form-control" placeholder="Введите имя" name="name" id="name"><br>
-        </div>
+            <input type="text" class="form-control" placeholder="Введите имя" name="name" value="{{old('name')}} id="name"><br></div>
+
+            @error('name')
+    <div class="alert alert-danger">{{ $message }}</div>
+@enderror
+
         <div class="mb-3">
             <label for="email">Ваша почта<span>*</span></label><br>
             <input type="email" class="form-control" placeholder="Введите email" name="email" id="email">

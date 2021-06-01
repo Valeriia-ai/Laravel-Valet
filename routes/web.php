@@ -20,5 +20,6 @@ Route::get('/', function () {
 Route::post('/contact', function () {
     $data = request()->all();
     dd($data);
-    return view('welcome2');
 });
+
+Route::post('/contact', action:'ContactController@index');
