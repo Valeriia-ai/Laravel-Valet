@@ -224,7 +224,6 @@
 
             @error('name')
     <div class="alert alert-danger">{{ $message }}</div>
-@enderror
 
         <div class="mb-3">
             <label for="email">Ваша почта<span>*</span></label><br>

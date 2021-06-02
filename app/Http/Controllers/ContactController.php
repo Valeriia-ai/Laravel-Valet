@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
      public function index(Request $request){
-       $request->validate([
+      $request->validate([
            'name' => 'requared|min:3'
-       ])
-        dd($data)
-     };
+       ]);
+       dd($data);
+     }
 }
